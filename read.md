@@ -31,3 +31,44 @@ Hugging Face Transformers
 
 Python-dotenv
  – Environment variable management
+
+
+📦 Installation
+1️⃣ Clone the Repository
+git clone https://github.com/Basant2206/HiringAssistantchatbot_for_TalentScout_using_Streamlit_OpenAI.git
+cd HiringAssistantchatbot_for_TalentScout_using_Streamlit_OpenAI
+
+2️⃣ Create Virtual Environment
+python -m venv venv
+source venv/bin/activate   # On Mac/Linux
+venv\Scripts\activate      # On Windows
+
+3️⃣ Install Dependencies
+pip install -r requirements.txt
+
+4️⃣ Set Environment Variables
+
+Create a .env file in the project root:
+
+OPENAI_API_KEY=your_openai_api_key        
+
+▶️ Run the App
+streamlit run app.py
+
+
+Then open 
+Local URL: http://localhost:8501
+Network URL: http://192.168.1.34:8501
+
+
+📂 Project Structure
+├── app.py                  # Main Streamlit app
+├── requirements.txt        # Python dependencies
+├── .env                    # API keys (not committed)
+└── README.md               # Project documentation
+
+🔮 Future Improvements
+- Save candidate information to a database (e.g., PostgreSQL, Firebase).
+- Add resume parsing for auto-filling candidate details.
+- Enable multi-turn structured interview flow.
+- Deploy on AWS / Streamlit Cloud / Docker.
